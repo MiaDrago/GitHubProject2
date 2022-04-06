@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource {
          
         guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
         
-        vc2.name = vc2.nameLabel.text!
+        vc2.name = selectedRow as! String
     }
     
 }
