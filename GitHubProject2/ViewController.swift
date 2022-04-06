@@ -11,12 +11,12 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     var array = ["Dog", "Cat", "Parrot"]
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        
+       
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

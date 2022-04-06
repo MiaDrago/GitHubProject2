@@ -8,13 +8,15 @@
 import UIKit
 
 class ViewController2: UIViewController {
-
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    var name = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = name
+        imageView.image = UIImage(named:name)
     }
-    
+ 
 
     /*
     // MARK: - Navigation
