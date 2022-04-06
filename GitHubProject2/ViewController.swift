@@ -29,5 +29,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc2 = segue.destination as! ViewController2
+         
+        guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
+        
+        vc2.name = vc2.nameLabel.text!
+    }
+    
 }
 

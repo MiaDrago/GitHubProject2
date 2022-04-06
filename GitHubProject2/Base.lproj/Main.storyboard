@@ -75,6 +75,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BDU-ab-bJL"/>
+                    <connections>
+                        <outlet property="imageView" destination="2m3-vQ-9b9" id="ahp-D0-fon"/>
+                        <outlet property="nameLabel" destination="Pce-vj-gdB" id="j21-85-l1g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0NM-MZ-y8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
